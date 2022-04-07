@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="css/portfolio.css" rel="stylesheet">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+        <title>Max Schäfer</title>
+    </head>
+    <body>
+        <header class="fixed-top">
+            <div class="py-2 flex-wrap justify-content-center">
+                <a href="/" id="brand-logo" class="align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+                    <span class="fs-5">MAX SCHAEFER</span>
+                </a>
+                <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+                    aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon3">
+                        <span></span><span></span><span></span>
+                    </div>
+                </button>
+                <nav id="topnav" class="navbar navbar-dark indigo darken-2">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#about" class="nav-link" aria-current="page">About</a></li>
+                        <li class="nav-item"><a href="#kaggle" class="nav-link">Kaggle</a></li>
+                        <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a id="btn-resume" href="documents/Resume.pdf" class="btn btn-outline-light"><i class="fas fa-cloud-download-alt"></i>Resume</a></li>
+                    </ul>
+                </nav>
+                <nav id="mySidenav" class="sidenav close">
+                    <ol class="nav nav-pills mb-5">
+                        <li class="nav-item"><a href="#about" class="nav-link nav-link-m" aria-current="page">About</a></li>
+                        <li class="nav-item"><a href="#kaggle" class="nav-link nav-link-m">Kaggle</a></li>
+                        <li class="nav-item"><a href="#achievements" class="nav-link nav-link-m">Achievements</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link nav-link-m">Blog</a></li>
+                        <li class="nav-item"><a id="btn-resume" href="documents/Resume.pdf" class="btn btn-outline-light"><i class="fas fa-cloud-download-alt"></i>Resume</a></li>
+                    </ol>
+                    <div id="social-bar" class="container text-center">
+                        <h1 class="container-fluid">Get In Touch</h1>
+                        <div class="d-flex justify-content-around">
+                            <a title="Contact Email" href="mailto:prv.maxim@gmail.com">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                            <a title="LinkedIn Profile" href="https://www.linkedin.com/in/max-sch%C3%A4fer-1ba05015a/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a title="GitHub Profile" href="https://github.com/maxdoescode">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a title="Kaggle Profile" href="https://kaggle.com">
+                                <i class="fab fa-kaggle"></i>
+                            </a>
+                            <a title="Twitter Profile" href="https://twitter.com/MaxSchaefer_">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div id="side-header" class="d-flex align-items-end">
+            <div class="container d-flex">
+                <a title="Contact Email" href="mailto:prv.maxim@gmail.com">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a title="LinkedIn Profile" href="https://www.linkedin.com/in/max-sch%C3%A4fer-1ba05015a/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a title="GitHub Profile" href="https://github.com/maxdoescode">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a title="Kaggle Profile" href="https://kaggle.com">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+                <a title="Twitter Profile" href="https://twitter.com/MaxSchaefer_">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>   
+        </div>
+        <section id="cover" class="cover-container bg-primary text-white text-center">
+            <div class="container">
+                <div class="row mt-1">
+                    <div class="col d-flex">
+                        <div id="cover-text" class="col">
+                            <p>Hey, my name is</p>
+                            <h1>Max Schäfer.</h1>
+                            <h1>Building the future.</h1>
+                            <p>I´m a in Germany-based software engineer who specializes in machine learning with deeper interest in computer vision.</p>
+                            <button onclick="window.location.href='mailto:prv.maxim@gmail.com';" type="button" class="btn btn-outline-light">Get In Touch</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <canvas id=c></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="container text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>About</h1>
+                        <p>I´m a Germany-based software engineer who specializes in machine learning with deeper interest in computer vision.</p>
+                    </div>
+                    <div class="col">
+                        <div id="cover-text" class="col">
+                            <img class="img-fluid mb-5 d-block mx-auto" src="img/max_250x250.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="kaggle" class="bg-primary text-white">
+            <div class="container text-center">
+                <h1>Kaggle</h1>
+                <table class="table">
+                    <thead>
+                      <tr class="table-dark">
+                        <th scope="col">Rank</th>
+                        <th scope="col">Competition</th>
+                        <th scope="col">Discipline</th>
+                        <th scope="col">Model & Pipeline</th>
+                        <th scope="col">DEA</th>
+                        <th scope="col">Presentation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="table-dark">...</td>
+                        <td class="table-dark">iWildcam 2021 - FGVC8</td>
+                        <td class="table-dark">Computer Vision</td>
+                        <td class="table-dark"><a href="https://www.kaggle.com/c/iwildcam2021-fgvc8"><i class="fas fa-code"></i></a></td>
+                        <td class="table-dark"><a href="https://www.kaggle.com/c/iwildcam2021-fgvc8"><i class="fas fa-code"></i></a></td>
+                        <td class="table-dark"><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td class="table-dark">...</td>
+                        <td class="table-dark">...</td>
+                        <td class="table-dark">Computer Vision</td>
+                        <td class="table-dark"><a href="https://www.kaggle.com/c/iwildcam2021-fgvc8"><i class="fas fa-code"></i></a></td>
+                        <td class="table-dark"><a href="https://www.kaggle.com/c/iwildcam2021-fgvc8"><i class="fas fa-code"></i></a></td>
+                        <td class="table-dark"><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+        <section id="achievements" class="container text-center">
+            <h1>Achievements</h1>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">By</th>
+                    <th scope="col">Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Deep Learning Specialization</td>
+                    <td>Certificate (5 courses)</td>
+                    <td>DeepLearning.AI</td>
+                    <td><a href="https://coursera.org/share/933073113c9444d5e9b007b18128459c">Coursera</a></td>
+                  </tr>
+                  <tr>
+                    <td>TensorFlow Developer</td>
+                    <td>Certificate (4 courses)</td>
+                    <td>DeepLearning.AI</td>
+                    <td>Coming Soon...</td>
+                  </tr>
+                  <tr>
+                    <td>Computer Science for Web Programming</td>
+                    <td>Certificate (2 courses)</td>
+                    <td>HarvardX</td>
+                    <td>Coming Soon...</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+        <section id="contact" class="bg-primary text-white">
+            <div class="container text-center">
+                <h1>Get In Touch</h1>
+                <p>Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <button onclick="window.location.href='mailto:prv.maxim@gmail.com';" type="button" class="btn btn-outline-light">Say Hello</button>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+            <!-- <script src="js/neural_network.js"></script> -->
+            <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+            <script src="js/navbar.js"></script>
+        </section>
+    </body>
+    <footer class="container bg-primary text-center text-white">
+    </footer>
+</html>
