@@ -1,6 +1,8 @@
+![cover screenshot](/img/portfolio-screenshot.JPG)
+
 # Description
 Portfolio for machine learning/deep learning engineers, who are participating in competitions. Free to use for anybody interested.
-Website is divided into 5 different sections:
+The website is divided into 5 different sections:
 1. Cover section
 2. About-you section 
 3. Skills (for prog. languages or libraries)
