@@ -402,6 +402,8 @@ img{
     #cover .row{
         display:flex;
         flex-direction: column-reverse;
+        justify-content: space-between;
+        height:100%;
     }
     #mySidenav li:last-child{
         border-bottom:none;
@@ -423,6 +425,9 @@ img{
         margin:20px 0 0 0;
     }
     canvas{
-        width:75%;
+        width:65%;
+    }
+    .skill{
+        margin:5px;
     }
 }
