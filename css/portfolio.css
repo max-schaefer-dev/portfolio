@@ -340,10 +340,6 @@ img{
 }
 
 
-@media (max-width: 767px) and (max-width: 992px) {
-
-}
-
 @media screen and (max-width: 992px) {
     .table td {
         padding: 0.5rem;
@@ -358,9 +354,6 @@ img{
     #side-header, #topnav {
         display: none!important;
     }
-    /* #achievements table{
-        display:block!important;
-    } */
     #achievements{
         font-size:14px;
     }
@@ -388,7 +381,7 @@ img{
         padding-left:1rem;
     }
     #cover-text{
-        /* margin-top:20px; */
+        margin-top:20px;
     }
     #cover-text h1{
         font-size:32px;
@@ -402,8 +395,6 @@ img{
     #cover .row{
         display:flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
-        height:100%;
     }
     #mySidenav li:last-child{
         border-bottom:none;
