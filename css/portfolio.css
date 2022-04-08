@@ -339,6 +339,12 @@ img{
     float:right;
 }
 
+@media screen and (max-width: 375px) {
+    #cover{
+        height:initial;
+    }
+}
+
 
 @media screen and (max-width: 992px) {
     .table td {
@@ -395,6 +401,8 @@ img{
     #cover .row{
         display:flex;
         flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 100%;
     }
     #mySidenav li:last-child{
         border-bottom:none;
