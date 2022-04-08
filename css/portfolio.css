@@ -388,7 +388,7 @@ img{
         padding-left:1rem;
     }
     #cover-text{
-        margin-top:20px;
+        /* margin-top:20px; */
     }
     #cover-text h1{
         font-size:32px;
@@ -423,6 +423,6 @@ img{
         margin:20px 0 0 0;
     }
     canvas{
-        width:65%;
+        width:75%;
     }
 }
