@@ -11,4 +11,4 @@ The website is divided into 5 different sections:
 6. Get-in-touch section with links to socials
 
 # Online demo
-https://max-schaefer-dev.github.io/portfolio/
+http://maxschaefer.tech
