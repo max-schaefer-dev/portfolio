@@ -100,7 +100,7 @@ footer p{
     display:none;
 }
 
-#side-header{
+#side-bar{
     left:0;
     top:0;
     width:auto;
@@ -110,18 +110,18 @@ footer p{
     background-color: var(--bg-primary);
 }
 
-#side-header div{
+#side-bar div{
     bottom:50px;
     margin:0;
     flex-direction: column;
 }
 
-#side-header a{
+#side-bar a{
     padding:10px;
     margin-bottom:20px;
 }
 
-#side-header a:hover > .fab, #side-header a:hover > .far{
+#side-bar a:hover > .fab, #side-bar a:hover > .far{
     color:var(--h-primary);
 }
 
@@ -357,7 +357,7 @@ img{
         border-color:#fff;
     }
 
-    #side-header, #topnav {
+    #side-bar, #topnav {
         display: none!important;
     }
     #achievements{
