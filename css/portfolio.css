@@ -119,6 +119,7 @@ footer p{
 #side-bar a{
     padding:10px;
     margin-bottom:20px;
+    text-align:center;
 }
 
 #side-bar a:hover > .fab, #side-bar a:hover > .far{
