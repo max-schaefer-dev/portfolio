@@ -344,6 +344,7 @@ img{
     #cover{
         height:initial;
     }
+    
 }
 
 
@@ -429,5 +430,8 @@ img{
     }
     .skill{
         margin:5px;
+    }
+    .desktop{
+        display:none;
     }
 }
