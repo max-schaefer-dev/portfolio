@@ -360,6 +360,17 @@ img{
     
 }
 
+@media (min-width: 992px) and (max-width: 1366px) {
+    canvas{
+        width:55%;
+    }
+    #cover-text h1{
+        font-size:50px;
+    }
+    #cover{
+        padding-top: calc(6rem + 70px);
+    }
+}
 
 @media screen and (max-width: 992px) {
     .table td {

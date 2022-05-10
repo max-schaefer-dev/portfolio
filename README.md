@@ -15,3 +15,4 @@ https://www.maxschaefer.tech
 
 # References
 Neural network animation: https://codepen.io/towc/pen/wGjXGY
+Inspired by: https://github.com/bchiang7/v4
