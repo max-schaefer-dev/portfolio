@@ -16,6 +16,32 @@ h1{
     margin-bottom:2rem;
 }
 
+a {
+    color: var(--h-primary);
+    text-decoration: none;
+}
+
+.skill-list{
+    text-align: left;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    list-style: none;
+}
+
+.skill-list li:before {
+    content: "\2022";
+    color: var(--h-primary);
+    margin-left: -1em;
+    display: inline-block;
+    width: 1em;
+    font-weight: bold;
+}
+.skill-container{
+    display:flex;
+    margin-top:35px;
+}
+
 #cover-text h1{
     margin-bottom:0.5rem;
 }
@@ -315,19 +341,6 @@ img{
     margin-right:5px;
 }
 
-.skill{
-    border: solid 1px;
-    width: inherit;
-    border-radius: 5px;
-    line-height:0px;
-    margin: 5px 8px 5px 8px;
-    /* margin: 8px; */
-    padding:8px;
-    webkit-box-shadow: 0px 0px 8px -4px #000000;
-    box-shadow: 0px 0px 8px -4px #000000;
-
-}
-
 #social-bar a{
     padding:10px;
 }
@@ -428,10 +441,20 @@ img{
     canvas{
         width:65%;
     }
-    .skill{
-        margin:5px;
-    }
     .desktop{
         display:none;
+    }
+    .skill-list{
+        font-size:14px;
+        padding-left:10px;
+    }
+    .skill-list h6{
+        font-size:0.9rem;
+    }
+    .image-col{
+        flex:initial;
+    }
+    #about .row{
+        flex-wrap: wrap-reverse;
     }
 }
