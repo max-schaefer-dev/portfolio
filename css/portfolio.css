@@ -16,11 +16,11 @@ h1{
     margin-bottom:2rem;
 }
 
-#competitions a {
+#competitions a, #achievements a {
     color: var(--h-primary);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
-#competitions a:hover{
+#competitions a:hover, #achievements a:hover{
     color: #f74a23;
 }
 
@@ -471,6 +471,6 @@ img{
         flex:initial;
     }
     #about .row{
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
 }
