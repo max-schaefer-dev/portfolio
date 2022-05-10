@@ -16,9 +16,12 @@ h1{
     margin-bottom:2rem;
 }
 
-a {
+#competitions a {
     color: var(--h-primary);
     text-decoration: none;
+}
+#competitions a:hover{
+    color: #f74a23;
 }
 
 .skill-list{
@@ -150,6 +153,8 @@ footer p{
 
 #side-bar a:hover > .fab, #side-bar a:hover > .far{
     color:var(--h-primary);
+    transform: translateY(-5px);
+    transition-duration: 0.4s;
 }
 
 #brand-logo{
