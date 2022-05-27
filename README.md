@@ -5,10 +5,9 @@ Portfolio for machine learning/deep learning engineers, who are participating in
 The website is divided into 5 different sections:
 1. Cover section
 2. About-you section 
-3. Skills (for prog. languages or libraries)
-4. Competition section where you can list the competitions and your rank
-5. Accomplishments (for certificates)
-6. Get-in-touch section with links to socials
+3. Competition section where you can list the competitions and your rank
+4. Accomplishments (for certificates)
+5. Get-in-touch section with links to socials
 
 # Online demo
 https://www.maxschaefer.tech
