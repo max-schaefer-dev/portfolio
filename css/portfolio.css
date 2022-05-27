@@ -1,3 +1,4 @@
+/* General */
 :root{
     --bs-dark:#111111;
     --bg-primary: #181D26;
@@ -8,84 +9,8 @@
     --bg-fourth:#B8CCD9;
 }
 
-#cover p, footer p{
-    color:var(--bg-fourth);
-}
-
 h1{
     margin-bottom:2rem;
-}
-
-#competitions a, #achievements a {
-    color: var(--h-primary);
-    /* text-decoration: none; */
-}
-#competitions a:hover, #achievements a:hover{
-    color: #f74a23;
-}
-
-.skill-list{
-    text-align: left;
-    columns: 1;
-    -webkit-columns: 1;
-    -moz-columns: 1;
-    list-style: none;
-}
-
-.skill-list li:before {
-    content: "\2022";
-    color: var(--h-primary);
-    margin-left: -1em;
-    display: inline-block;
-    width: 1em;
-    font-weight: bold;
-}
-.skill-container{
-    display:flex;
-    margin-top:35px;
-}
-
-#cover-text h1{
-    margin-bottom:0.5rem;
-}
-
-.table td{
-    border:none;
-    padding: 1rem 0.5rem;
-}
-.table tr{
-    border-bottom-width: 1px;
-    border-color: #373b3e;
-}
-.table tr:last-child{
-    border:none;
-}
-
-.bg-primary{
-    background-color: var(--bg-primary)!important;
-}
-.bg-secondary{
-    background-color: var(--bg-secondary) !important;
-}
-
-.btn-outline-1{
-    color:var(--h-primary);
-    border-color:var(--h-primary);
-}
-.btn-outline-1:hover{
-    color:#fff;
-    background-color:var(--h-primary);
-}
-
-.table-dark{
-    --bs-table-bg:var(--bg-primary);
-}
-
-#btn-resume{
-    letter-spacing:1.5px;
-}
-#btn-resume i{
-    margin-right:5px;
 }
 
 header{
@@ -125,46 +50,49 @@ footer p{
     margin:0;
 }
 
-#social-bar{
-    display:none;
+#cover p, footer p{
+    color:var(--bg-fourth);
 }
 
-#side-bar{
-    left:0;
-    top:0;
-    width:auto;
-    height:100%;
-    position:fixed;
-    z-index:2;
-    background-color: var(--bg-primary);
+.fab, .far{
+    font-size:1.5rem;
+    color:#fff;
 }
 
-#side-bar div{
-    bottom:50px;
-    margin:0;
-    flex-direction: column;
+.bg-primary{
+    background-color: var(--bg-primary)!important;
 }
 
-#side-bar a{
-    padding:10px;
-    margin-bottom:20px;
-    text-align:center;
+.bg-secondary{
+    background-color: var(--bg-secondary) !important;
 }
 
-#side-bar a:hover > .fab, #side-bar a:hover > .far{
+.btn-outline-1{
     color:var(--h-primary);
-    transform: translateY(-5px);
-    transition-duration: 0.4s;
+    border-color:var(--h-primary);
 }
 
-#brand-logo{
-    display:flex;
+.btn-outline-1:hover{
+    color:#fff;
+    background-color:var(--h-primary);
 }
 
-.navbar-toggler{
-    display:none;
+.table td{
+    border:none;
+    padding: 1rem 0.5rem;
 }
 
+.table tr{
+    border-bottom-width: 1px;
+    border-color: #373b3e;
+}
+
+.table tr:last-child{
+    border:none;
+}
+
+
+/* Section 1 - Cover */
 #cover{
     padding-top:calc(6rem + 150px);
     padding-bottom:72px;
@@ -182,11 +110,76 @@ footer p{
     font-size:60px;
     font-weight:700;
 }
+
 #cover-text button{
     padding: 0.8rem 1.5rem;
     margin: 20px 0 0 0;
 }
 
+
+/* Section 2 - About me */
+.iconify{
+    margin-right:5px;
+}
+
+#cover-text h1{
+    margin-bottom:0.5rem;
+}
+
+.skill-list{
+    text-align: left;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    list-style: none;
+}
+
+.skill-list li:before {
+    content: "\2022";
+    color: var(--h-primary);
+    margin-left: -1em;
+    display: inline-block;
+    width: 1em;
+    font-weight: bold;
+}
+
+.skill-container{
+    display:flex;
+    margin-top:35px;
+}
+
+#image-container{
+    display:flex;
+    height:100%;
+}
+
+#image-container img{
+    width:350px;
+    margin:auto;
+    border-radius: 50%;
+}
+
+
+/* Section 3 - Competitions */
+#competitions a, #achievements a {
+    color: var(--h-primary);
+}
+
+#competitions a:hover, #achievements a:hover{
+    color: #f74a23;
+}
+
+#competitions td, #competitions tr{
+    --bs-table-bg:var(--bg-primary);
+    color: #fff;
+} 
+
+#competitions .fab{
+    color:var(--h-primary);
+}
+
+
+/* Section 5 - Get-in-touch */
 #contact div{
     width:30%;
 }
@@ -196,40 +189,89 @@ footer p{
     padding: 10px 15px;
 }
 
-#competitions .fab{
-    color:var(--h-primary);
+#social-bar a{
+    padding:10px;
+}
+
+#social-bar a:hover > .fab, #social-bar a:hover > .far{
+    color:#0d6efd;
+}
+
+
+/*** navigation bars (desktop & mobile) ***/
+/* desktop nav */
+#btn-resume{
+    letter-spacing:1.5px;
+}
+
+#btn-resume i{
+    margin-right:5px;
+}
+
+#social-bar{
+    display:none;
+}
+
+#brand-logo{
+    display:flex;
+}
+
+.navbar-toggler{
+    display:none;
 }
 
 .nav-link:hover{
     color:var(--h-primary);
 }
 
-.fab, .far{
-    font-size:1.5rem;
-    color:#fff;
+
+/* mobile nav */
+.third-button{
+    float:right;
 }
 
+#nav-mobile{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #212834;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.5s; 
+}
 
-#mySidenav .fas{
+#nav-mobile.close{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #212834;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.5s;
+  }
+
+#nav-mobile .fas{
     margin-right:10px;
 }
 
-#mySidenav li{
+#nav-mobile li{
     width: 100%;
     border-bottom: 1px solid #fff;
 }
 
-#mySidenav .nav-link{
+#nav-mobile .nav-link{
     padding:1.5rem 2rem;
     font-size: 26px;
 }
 
-img{
-    border-radius: 50%;
-}
 
 /* hamburger menu */
-
 .animated-icon3 {
     width: 30px;
     height: 20px;
@@ -316,161 +358,189 @@ img{
     left: 8px;
 }
 
-.sidenav.close{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    right: 0;
-    background-color: #212834;
-    overflow-x: hidden;
-    padding-top: 80px;
-    transition: 0.5s;
-  }
 
-.sidenav{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    right: 0;
-    background-color: #212834;
-    overflow-x: hidden;
-    padding-top: 80px;
-    transition: 0.5s; 
+/* Side menu */
+#side-bar{
+    left:0;
+    top:0;
+    width:auto;
+    height:100%;
+    position:fixed;
+    z-index:2;
+    background-color: var(--bg-primary);
 }
 
-.iconify{
-    margin-right:5px;
+#side-bar div{
+    bottom:50px;
+    margin:0;
+    flex-direction: column;
 }
 
-#social-bar a{
+#side-bar a{
     padding:10px;
+    margin-bottom:20px;
+    text-align:center;
 }
 
-#social-bar a:hover > .fab, #social-bar a:hover > .far{
-    color:#0d6efd;
+#side-bar a:hover > .fab, #side-bar a:hover > .far{
+    color:var(--h-primary);
+    transform: translateY(-5px);
+    transition-duration: 0.4s;
 }
 
-.third-button{
-    float:right;
-}
 
-@media screen and (max-width: 375px) {
-    #cover{
-        height:initial;
-    }
-    
-}
-
+/* css for mobile clients */
 @media (min-width: 992px) and (max-width: 1366px) {
     canvas{
         width:55%;
     }
+
     #cover-text h1{
         font-size:50px;
     }
+
     #cover{
         padding-top: calc(6rem + 70px);
+        height: auto;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .table td {
-        padding: 0.5rem;
-    }
-    #competitions table{
-        font-size:13px;
-    }
-    #competitions tr:last-child{
-        border-color:#fff;
-    }
-
-    #side-bar, #topnav {
-        display: none!important;
-    }
-    #achievements{
-        font-size:14px;
-    }
-    #achievements tr:last-child{
-        border-color:#fff;
-    }
-    .navbar-toggler, header div{
-        display:block!important;
-    }
-    #contact div {
-        width:initial;
-    }
-    tr{
-        vertical-align: middle;
-    }
     header{
         padding: 0.5rem 1.5rem;
         margin-bottom: 1.5rem;
     }
+
+    tr{
+        vertical-align: middle;
+    }
+
+    footer p{
+        margin:20px 0 0 0;
+    }
+
+    canvas{
+        width:65%;
+    }
+
+    .table td {
+        padding: 0.5rem;
+    }
+
+    #image-container img{
+        margin-top:50px;
+        margin-bottom:0!important;
+    }
+    
+    #competitions table{
+        font-size:13px;
+    }
+
+    #competitions tr:last-child{
+        border-color:#fff;
+    }
+
+    #side-bar, #nav-desktop {
+        display: none!important;
+    }
+
+    #achievements{
+        font-size:14px;
+    }
+
+    #achievements tr:last-child{
+        border-color:#fff;
+    }
+
+    .navbar-toggler, header div{
+        display:block!important;
+    }
+
+    #contact div {
+        width:initial;
+    }
+
     #brand-logo{
         display:initial;
     }
+
     #cover{
         padding-top:100px;
         padding-left:1rem;
     }
+
     #cover-text{
         margin-top:20px;
     }
+
     #cover-text h1{
         font-size:32px;
     }
+
     #cover-text p:first-child{
         margin-bottom:0;
     }
+
     #cover .col{
         flex:initial;
     }
+
     #cover .row{
         display:flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         height: 100%;
     }
-    #mySidenav li:last-child{
+
+    #nav-mobile li:last-child{
         border-bottom:none;
         margin:25px;
     }
+
     #btn-resume{
         font-size:22px;
         background-color: #fff;
         color: #111;
     }
+
     #btn-resume:active{
         background-color:#111;
         color: #fff;
     }
+
     #social-bar{
         display:block;
     }
-    footer p{
-        margin:20px 0 0 0;
-    }
-    canvas{
-        width:65%;
-    }
+
     .desktop{
         display:none;
     }
+
     .skill-list{
         font-size:14px;
         padding-left:10px;
     }
+
     .skill-list h6{
         font-size:0.9rem;
     }
+
     .image-col{
         flex:initial;
     }
+
     #about .row{
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #cover{
+        height:initial;
+    }
+    
+    #image-container img{
+        margin-top:30px;
+        width:300px;
     }
 }
