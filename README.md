@@ -1,4 +1,4 @@
-![cover screenshot](/img/portfolio-screenshot.JPG)
+![cover screenshot](/media/portfolio-screenshot.JPG)
 
 # Description
 Portfolio for machine learning/deep learning engineers, who are participating in competitions. Free to use for anybody interested.
