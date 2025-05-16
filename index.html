@@ -4,6 +4,8 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="MLOps Engineer Freelancer - Machine Learning Pipelines, Deployment und Monitoring">
+        <meta name="keywords" content="MLOps, Freelancer, Machine Learning, Data Engineering, Kubernetes">
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -13,6 +15,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
@@ -40,11 +44,11 @@
                 <!-- Navigation for desktop -->
                 <nav id="nav-desktop" class="navbar navbar-dark indigo darken-2">
                     <ul class="nav nav-pills">
-                        <li class="nav-item"><a href="#about" class="nav-link" aria-current="page">About</a></li>
-                        <li class="nav-item"><a href="#competitions" class="nav-link">Competitions</a></li>
-                        <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contacts</a></li>
-                        <li class="nav-item"><a id="btn-resume" href="https://www.linkedin.com/in/max-schaefer-dev/" class="btn btn-outline-light" target="_blank"><i class="fas fa-cloud-download-alt"></i>CV</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link" aria-current="page">01. About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">02. Services</a></li>
+                        <li class="nav-item"><a href="#tech_stack" class="nav-link">03. Tech Stack</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">04. Projects</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">05. Contact</a></li>
                     </ul>
                 </nav>
 
@@ -88,10 +92,10 @@
                 <div class="row mt-1">
                     <div class="col d-flex">
                         <div id="cover-text" class="col">
-                            <p>Hey, my name is</p>
-                            <h1>Max Schäfer.</h1>
+                            <h1><span class="gradient-text">Max Schäfer.</span></h1>
                             <h1>Building something worthwhile.</h1>
-                            <p>I´m a in Germany-based software engineer who specializes in machine learning and deep learning with deeper interest in computer vision.</p>
+                            <h5>MLOps Engineer & Cloud Architect</h5>
+                            <p>I build robust and scalable machine learning infrastructure for organizations looking to operationalize their AI initiatives.</p>
                             <button onclick="window.location.href='mailto:max@maxschaefer.tech';" type="button" class="btn btn-outline-1">Get In Touch</button>
                         </div>
                     </div>
@@ -102,53 +106,48 @@
             </div>
         </section>
 
-        <!-- About me section -->
+        <!-- 01. About me section -->
         <section id="about" class="container text-center">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1>About Me</h1>
+                        <h2 class="" style="font-size:1rem;">01. About Me</h2>
+                        <h3 class="text-4xl font-bold mb-8">
+                            Building the Bridge Between <span class="gradient-text">ML and Production</span>
+                        </h3>
                         <p>I´m a Germany-based software engineer who specializes in Machine Learning and Deep Learning with deeper interest in computer vision.<br><br>
                         I love to explore all the different paths in life and  to challenge myself to learn with things i never did before. What´s your next challenge?
                         </p>
 
                         <!-- Skill lists -->
-                        <div class="skill-container">
-                            <div class="col">
-                                <ul class="skill-list">
-                                    <h6>Coding & ML</h6>
-                                    <li>PyTorch & Tensorflow</li>
-                                    <li>Keras</li>
-                                    <li>OpenCV</li>
-                                    <li>NumPy</li>
-                                    <li>Pandas</li>
-                                    <li>React</li>
-                                    <li>HTML, CSS, JavaScript</li>
-                                </ul>
+                        <div class="about-grid">
+                            <div>
+                                <h4 class="section-title">Education</h4>
+                                <p class="section-text">
+                                    MS in Computer Science<br/>
+                                    Stanford University
+                                </p>
                             </div>
-                            <div class="col">
-                                <ul class="skill-list">
-                                    <h6>Engineering</h6>
-                                    <li>Azure & AWS</li>
-                                    <li>Snowflake</li>
-                                    <li>Databricks</li>
-                                    <li>SAS</li>
-                                    <li>Tableau</li>
-                                    <li>Django</li>
-                                    <li>Wordpress</li>
-                                </ul>
+                            <div>
+                                <h4 class="section-title">Experience</h4>
+                                <p class="section-text">
+                                    8+ Years in Software Engineering<br/>
+                                    5+ Years in MLOps
+                                </p>
                             </div>
-                            <div class="col">
-                                <ul class="skill-list">
-                                    <h6>Architecture</h6>
-                                    <li>Azure & AWS Cloud</li>
-                                    <li>Microsoft SCCM</li>
-                                    <li>Microsoft MLP</li>
-                                    <li>VM</li>
-                                    <li>Backup & Recovery</li>
-                                    <li>Windows & Linux</li>
-                                    <li>MS SQL, Postgres, Oracle</li>
-                                </ul>
+                            <div>
+                                <h4 class="section-title">Certifications</h4>
+                                <p class="section-text">
+                                    AWS ML Specialty<br/>
+                                    GCP Professional ML Engineer
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="section-title">Location</h4>
+                                <p class="section-text">
+                                    San Francisco Bay Area<br/>
+                                    Remote Worldwide
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -160,150 +159,93 @@
                 </div>
             </div>
         </section>
+        
+        <!-- 02. Services Section -->
+        <section id="services" class="cover-container bg-primary text-white text-center">
+            <div class="container">
+                <div class="tech-pattern"></div>
+                <div class="section-header text-center">
+                    <h2 class="" style="font-size:1rem;">02. Services</h2>
+                    <h1 class="text-center">Specialized<span class="gradient-text"> MLOps Services</span></h1>
+                </div>
+                    <div class="section-header">
+                    <p>I offer end-to-end MLOps solutions to help teams deploy and scale machine learning in production environments</p>
+                    </div>
 
-        <!-- Competition section -->
-        <section id="competitions" class="bg-primary text-white">
-            <div class="container text-center">
-                <h1>Competitions</h1>
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Rank</th>
-                        <th scope="col">Competition</th>
-                        <th class="desktop" scope="col">Data Type</th>
-                        <th scope="col">Problem Type</th>
-                        <th scope="col">Code</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Top 3% - 23/713</td>
-                            <td><a href="https://www.drivendata.org/competitions/93/nasa-mars-spectrometry/" target="_blank">Mars Spectrometry: Detect Evidence for Past Habitability</a></td>
-                            <td class="desktop">Tabular Data</td>
-                            <td>Multi-Label Classification</td>
-                            <td><a href="https://github.com/max-schaefer-dev/mars-spectrometry-23th-place-solution" target="_blank"><i class="fas fa-code"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>Top 2% - 19/854</td>
-                            <td><a href="https://www.drivendata.org/competitions/83/cloud-cover/" target="_blank">On Cloud N - Cloud Cover Detection Challange</a></td>
-                            <td class="desktop">Images (geoTIFF)</td>
-                            <td>Semantic Segmentation</td>
-                            <td><a href="https://github.com/max-schaefer-dev/on-cloud-n-19th-place-solution" target="_blank"><i class="fas fa-code"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>Top 7% - 19/296</td>
-                            <td><a href="https://www.drivendata.org/competitions/82/competition-wildlife-video-depth-estimation/page/390/" target="_blank">Deep Chimpact: Depth Estimation for Wildlife Conservation</a></td>
-                            <td class="desktop">Video (mp4)</td>
-                            <td>Depth Estimation</td>
-                            <td><i class="fas fa-code"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Top 8% - 33/403</td>
-                            <td><a href="https://https-deeplearning-ai.github.io/data-centric-comp/" target="_blank">Data-Centric AI Competition</a></td>
-                            <td class="desktop">Images (jpg)</td>
-                            <td>Multi-Class Classification</td>
-                            <td><i class="fas fa-code"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Top 24% - 356/1505</td>
-                            <td><a href="https://www.kaggle.com/c/sartorius-cell-instance-segmentation" target="_blank">Sartorius - Cell Instance Segmentation</a></td>
-                            <td class="desktop">Images (png)</td>
-                            <td>Instance Segmentation</td>
-                            <td><i class="fas fa-code"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Top 27% - 103/383</td>
-                            <td><a href="https://www.kaggle.com/c/landmark-recognition-2021" target="_blank">Google Landmark Recognition 2021</a></td>
-                            <td class="desktop">Images (jpg)</td>
-                            <td>Object Recognition</td>
-                            <td><i class="fas fa-code"></i></td>
-                        </tr>
-                    </tbody>
-                  </table>
+                <div class="grid">
+                    <div class="service-card">
+                        <i class="fas fa-flask"></i>
+                        <h4>ML Pipeline Design</h4>
+                        <p>Building automated, scalable pipelines for data preprocessing, model training, and evaluation with proper testing and validation steps.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h4>CI/CD for ML</h4>
+                        <p>Implementing continuous integration and deployment workflows specifically designed for machine learning code, data, and models.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-database"></i>
+                        <h4>Data Version Control</h4>
+                        <p>Setting up systems to track, version, and manage datasets and feature stores for reproducible machine learning experiments.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-lock"></i>
+                        <h4>Model Serving & Security</h4>
+                        <p>Deploying models with scalable REST APIs, batch processing capabilities, and implementing security best practices for ML systems.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Model Monitoring</h4>
+                        <p>Implementing systems to monitor model performance, data drift, and operational health with automated alerts and dashboards.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>MLOps Training & Strategy</h4>
+                        <p>Providing team training, creating organizational MLOps roadmaps, and establishing best practices tailored to your specific needs.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Competition section -->
-        <section id="achievements" class="container text-center">
-            <h1>Achievements</h1>
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Certificate</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>12/23</td>
-                        <td>Databricks Certified Data Engineer Associate</td>
-                        <td>Certification</td>
-                        <td><a href="https://credentials.databricks.com/e3d63fb6-1230-49ea-9c0b-3cb63ed47d87" target="_blank">Databricks</a></td>
-                    </tr>
-                    <tr>
-                        <td>08/23</td>
-                        <td>Microsoft Certified: Azure Data Scientist Associate</td>
-                        <td>Certification</td>
-                        <td><a href="https://learn.microsoft.com/api/credentials/share/en-us/MaxSCHFER-5624/E803EA1F44B8B18C?sharingId" target="_blank">Microsoft</a></td>
-                    </tr>
-                    <tr>
-                        <td>01/23</td>
-                        <td>SnowPro Core Certification</td>
-                        <td>Certification</td>
-                        <td><a href="https://achieve.snowflake.com/40adeaf8-eaa3-47fc-92d2-305784f805cf" target="_blank">Snowflake</a></td>
-                    </tr>
-                    <tr>
-                        <td>09/22</td>
-                        <td>SAS Certified Specialist: Machine Learning Using SAS Viya 3.5</td>
-                        <td>Certification</td>
-                        <td><a href="media/SAS_Certified_Specialist_Machine_Learning_Using_SAS_Viya_3.5_certificate.pdf" target="_blank">SAS</a></td>
-                    </tr>
-                    <tr>
-                        <td>09/21</td>
-                        <td>Deep Learning Engineer</td>
-                        <td>Certification</td>
-                        <td><a href="https://app.workera.ai/public/candidate/certificate?code=Z6NQM9CB" target="_blank">Workera.ai</a></td>
-                    </tr>
-                    <tr>
-                        <td>07/21</td>
-                        <td>TensorFlow: Data and Deployment</td>
-                        <td>Specialization (4 courses)</td>
-                        <td><a href="https://coursera.org/share/fce38d52b7f75d49052c8debb5bdf9a0" target="_blank">Coursera</a></td>
-                    </tr>
-                    <tr>
-                        <td>06/21</td>
-                        <td>AI for Medicine</td>
-                        <td>Specialization (3 courses)</td>
-                        <td><a href="https://coursera.org/share/f5ba859860c811b6ce42f8d7dabc2ee8" target="_blank">Coursera</a></td>   
-                    </tr>
-                    <tr>
-                        <td>06/21</td>
-                        <td>TensorFlow: Advanced Techniques</td>
-                        <td>Specialization (4 courses)</td>
-                        <td><a href="https://coursera.org/share/8f14e35bfc3da11a06bc8f983c7ae497" target="_blank">Coursera</a></td>
-                    </tr>
-                    <tr>
-                        <td>06/21</td>
-                        <td>TensorFlow Developer</td>
-                        <td>Specialization (4 courses)</td>
-                        <td><a href="https://coursera.org/share/863122ae8214e5b9873a02fa8357dc4b" target="_blank">Coursera</a></td>
-                    </tr>
-                    <tr>
-                        <td>05/21</td>
-                        <td>Deep Learning</td>
-                        <td>Specialization (5 courses)</td>
-                        <td><a href="https://coursera.org/share/933073113c9444d5e9b007b18128459c" target="_blank">Coursera</a></td>
-                    </tr>
-                </tbody>
-              </table>
+        <!-- 03. Technologies Section -->
+        <section id="technologies">
+            <div class="section-header text-center">
+                <h2 class="" style="font-size:1rem;">03. Technologies</h2>
+                <h1 class="text-center">Specialized<span class="gradient-text"> MLOps Services</span></h1>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>MLOps Pipelines</h3>
+                        <p>I build automated machine learning workflows with CI/CD, Kubernetes, and monitoring – for faster and reliable results.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Model Deployment</h3>
+                        <p>I bring your models into production at scale – using TensorFlow, cloud solutions, or containerization.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Monitoring & Optimization</h3>
+                        <p>I ensure your models stay performant with tools like MLflow and Airflow, including drift detection.</p>
+                    </div>
+                </div>
+                <button onclick="window.location.href='mailto:prv.maxim@gmail.com';" type="button" class="btn btn-outline-1">Let’s Start Your Project!</button>
+            </div>
         </section>
 
-        <!-- Contact me section -->
-        <section id="contact" class="bg-primary text-white">
+
+        <!-- 04. Projects Section -->
+        <section id="projects" class="bg-primary text-white">
             <div class="container text-center">
-                <h1>Get In Touch</h1>
+                <h2 class="" style="font-size:1rem;">04. Projects</h2>
+                <h1>Features<span class="gradient-text"> Case Studies</span></h1>
+            </div>
+        </section>
+
+        <!-- 05. Contact Section -->
+        <section id="achievements" class="container text-center">
+            <h2 class="" style="font-size:1rem;">05. Contact</h2>
+            <h1>Let's<span class="gradient-text"> Work Together</span></h1>
+            <div class="container text-center">
                 <p>Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
                 <button onclick="window.location.href='mailto:prv.maxim@gmail.com';" type="button" class="btn btn-outline-1">Say Hello</button>
             </div>

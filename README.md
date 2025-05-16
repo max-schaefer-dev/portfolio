@@ -10,7 +10,7 @@ The website is divided into 5 different sections:
 5. Get-in-touch section with links to socials
 
 # Online demo
-https://www.maxschaefer.tech
+https://maxschaefer.tech
 
 # References
 Neural network animation: https://codepen.io/towc/pen/wGjXGY  

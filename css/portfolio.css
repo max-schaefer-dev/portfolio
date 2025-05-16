@@ -3,7 +3,7 @@
     --bs-dark:#111111;
     --bg-primary: #181D26;
     --bg-secondary:#212834;
-    --h-primary: #c0381b;
+    --h-primary: #06B6D4;
     --h-secondary: #734848;
     --bg-third: #99ADBF;
     --bg-fourth:#B8CCD9;
@@ -35,7 +35,7 @@ header div{
 }
 
 section{
-    padding:50px 0;
+    padding:50px 4rem;
 }
 
 canvas {
@@ -49,6 +49,69 @@ footer{
 footer p{
     margin:0;
 }
+
+
+/* Services */
+.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+.service-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .service-card i {
+      font-size: 2rem;
+      color: #06B6D4;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+.about-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+
+.section-title {
+      font-family: monospace;
+      color: #06B6D4;
+      margin-bottom: 0.5rem;
+    }
+
+.section-text {
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+
+.gradient-text {
+      background: linear-gradient(to right, #06B6D4, #3B82F6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
 #cover p, footer p{
     color:var(--bg-fourth);
@@ -95,8 +158,6 @@ footer p{
 /* Section 1 - Cover */
 #cover{
     padding-top:calc(6rem + 150px);
-    padding-bottom:72px;
-    padding-left:3rem;
     height:100vh;
 }
 
@@ -115,7 +176,6 @@ footer p{
     padding: 0.8rem 1.5rem;
     margin: 20px 0 0 0;
 }
-
 
 /* Section 2 - About me */
 .iconify{
@@ -159,6 +219,44 @@ footer p{
     border-radius: 50%;
 }
 
+/* Section 2 - Projects */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.project-description {
+    flex: 1;
+    max-width: 60%;
+}
+
+.project-image {
+    flex: 0 0 35%;
+    text-align: right;
+    padding-left: 0.5rem;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.result{
+    font-weight: 700;
+    color: var(--h-primary);
+    font-size: 1.1rem;
+}
 
 /* Section 3 - Competitions */
 #competitions a, #achievements a {
@@ -197,7 +295,6 @@ footer p{
     color:#0d6efd;
 }
 
-
 /*** navigation bars (desktop & mobile) ***/
 /* desktop nav */
 #btn-resume{
@@ -223,7 +320,6 @@ footer p{
 .nav-link:hover{
     color:var(--h-primary);
 }
-
 
 /* mobile nav */
 .third-button{
@@ -531,6 +627,28 @@ footer p{
 
     #about .row{
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        gap: 3rem;
+    }
+    .project-item {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-description {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .project-image {
+        flex: none;
+        padding-left: 0;
+        margin-top: 1rem;
     }
 }
 
