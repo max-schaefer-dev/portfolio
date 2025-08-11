@@ -162,9 +162,12 @@ footer p{
 }
 
 #cover-text{
+    display:flex;
+    flex-direction: column;
     text-align:left;
     z-index:1;
     margin:auto;
+    gap: 1rem;
 }
 
 #cover-text h1{
@@ -570,7 +573,7 @@ footer p{
     }
 
     #cover-text h1{
-        font-size:32px;
+        font-size:40px;
     }
 
     #cover-text p:first-child{
@@ -627,6 +630,7 @@ footer p{
 
     #about .row{
         flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
 }
 
