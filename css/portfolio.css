@@ -43,7 +43,7 @@ canvas {
 }
 
 footer{
-    padding:0 0 1.5rem 0;
+    padding:1.5rem 0 1.5rem 0;
 }
 
 footer p{
@@ -191,6 +191,10 @@ footer p{
     margin-right:5px;
 }
 
+.aboutme-text{
+    margin-top:15px;
+}
+
 #cover-text h1{
     margin-bottom:0.5rem;
 }
@@ -299,6 +303,10 @@ ul li{
     padding: 10px 15px;
 }
 
+#social-bar{
+    display:none;
+}
+
 #social-bar a{
     padding:10px;
 }
@@ -317,9 +325,6 @@ ul li{
     margin-right:5px;
 }
 
-#social-bar{
-    display:none;
-}
 
 #brand-logo{
     display:flex;
