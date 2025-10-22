@@ -50,6 +50,22 @@
             .service-card h4 { margin-top:.5rem; }
             .metric { font-weight:700; font-size:1.25rem; }
             .muted { opacity:.85; }
+
+            /* Terminal animation (hero) */
+            .terminal {
+                background: rgba(0,0,0,0.15);
+                border-radius: 6px;
+                max-width: 520px;
+                margin: 0.75rem auto 0;
+                padding: 0.6rem 0.9rem;
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;
+                color: #e9f2ff;
+                font-size: 0.95rem;
+                box-shadow: inset 0 -1px 0 rgba(255,255,255,0.03);
+            }
+            .terminal-line { white-space: nowrap; overflow: hidden; }
+            .term-cursor { display: inline-block; margin-left: 4px; opacity: 1; animation: blink 1s steps(2,start) infinite; }
+            @keyframes blink { 50% { opacity: 0; } }
         </style>
     </head>
     <body>
@@ -115,10 +131,13 @@
                             <h1><span class="gradient-text">Max Schäfer.</span>
                             Building something worthwhile.</h1>
                             <h5>MLOps Engineer | Data & ML Specialist | Automating Machine Learning Pipelines</h5>
-                            <p>I help organizations achieve real business impact by automating processes through production-grade MLOps solutions. Secure, scalable, and proven in live environments.</p>
+                            <p>I build production-grade MLOps systems that deploy, monitor, and recover themselves. Secure. Scalable. Auditable.</p>
                             <div class="container btn-container">
                                 <button type="button" class="btn btn-outline-1" href="#projects">View Case Studies</button>
                                 <button onclick="window.location.href='mailto:max@maxschaefer.tech';" type="button" class="btn btn-outline-1">Contact Me</button>
+                            </div>
+                            <div class="terminal" aria-hidden="true">
+                                <div class="terminal-line">&gt; <span id="term-text"></span><span class="term-cursor">▌</span></div>
                             </div>
                         </div>
                     </div>
@@ -135,13 +154,12 @@
                 <div class="tech-pattern"></div>
                 <div class="section-header text-center">
                     <h2 class="" style="font-size:1rem;">01. About Me</h2>
-                    <h1 class="text-4xl font-bold mb-3">From <span class="gradient-text">MLOps Innovation</span> to reliable <span class="gradient-text">Production</span></h1>
+                    <h1 class="text-4xl font-bold mb-3">From <span class="gradient-text">MLOps Innovation</span> to reliable production systems</h1>
                 </div>
                 <div class="row">
                     <div class="col aboutme-text">
                         <p>
-                        I’m a Germany-based AI Engineer focused on <strong>agentic workflows</strong>, <strong>RAG knowledge systems</strong>, and
-                        <strong>production deployments</strong>. I bridge business goals and engineering: measurable cost reduction, secure rollouts, and reliability at scale.
+                        I’m a Germany-based MLOps Engineer specialized in <strong>CI/CD for ML</strong>, <strong>data pipeline automation</strong>, and <strong>observability</strong>. I help teams turn experimental ML into maintainable, monitored production systems.
                         </p>
 
                         <!-- Skill lists -->
@@ -203,18 +221,18 @@
                 <div class="grid row mt-4">
                     <div class="service-card">
                         <i class="fas fa-headset"></i>
-                        <h4>AI Support Agents</h4>
-                        <p>Automate Tier‑0/Tier‑1. Resolve requests, update CRM/ITSM, escalate with context. Integrations: Salesforce, ServiceNow, HubSpot, Zendesk, O365.</p>
+                        <h4>Automated Deployment</h4>
+                        <p>End-to-end CI/CD for ML pipelines on Kubernetes and Airflow. Rollback-ready, fully versioned, and security-audited.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-book"></i>
-                        <h4>Knowledge & RAG Systems</h4>
-                        <p>Ingest PDFs, wikis, policies. Build retrieval, guardrails, and feedback loops. Versioned data pipelines and evals for quality.</p>
+                        <h4>Data & Model Pipeline Reliability</h4>
+                        <p>Automated ingestion, validation, transformation, and monitoring. Seamless scaling, fail-proof execution, and version-controlled artifacts.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-tools"></i>
-                        <h4>AI Ops & Governance</h4>
-                        <p>Deploy on Kubernetes with CI/CD, monitoring, cost tracking, audit logs, and safe rollback. SRE-grade reliability for AI.</p>
+                        <h4>Monitoring, Governance & Compliance</h4>
+                        <p>Enterprise-grade observability for ML systems. Real-time drift alerts, audit logs, SLA monitoring, and uptime tracking.</p>
                     </div>
                 </div>
             </div>
@@ -229,19 +247,19 @@
             <div class="grid row mt-4">
                 <div class="service-card">
                     <i class="fas fa-headset"></i>
-                    <h4>Support Automation for SaaS</h4>
+                    <h4>Automated ML deployment</h4>
                     <p class="muted">Agent resolves FAQs, updates Salesforce, escalates with full context.</p>
                     <p class="metric">→ 70% ticket deflection • <span class="muted">Go‑live in 6 weeks</span></p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-book"></i>
-                    <h4>RAG Knowledge Base for Ops</h4>
+                    <h4>Monitoring overhaul</h4>
                     <p class="muted">Ingested manuals & SOPs, retrieval with evaluations and guardrails.</p>
                     <p class="metric">→ 4× faster answers • <span class="muted">Audit‑ready</span></p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-tools"></i>
-                    <h4>AI Ops on Kubernetes</h4>
+                    <h4>Data ingestion refactor</h4>
                     <p class="muted">Cost tracking, rollback, reliability SLOs, and drift alerts.</p>
                     <p class="metric">→ 35% cost down • <span class="muted">99.9% uptime</span></p>
                 </div>
@@ -264,6 +282,56 @@
             <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
             <script src="js/navbar.js"></script>
             <script src="js/neural_network.js"></script>
+            <script>
+                // Simple typing animation for terminal-line
+                (function(){
+                    const el = document.getElementById('term-text');
+                    if(!el) return;
+                    const lines = [
+                        'deploying model v2.4... ',
+                        '✅ rollout successful'
+                    ];
+                    let lineIdx = 0, charIdx = 0, showingSecond = false;
+
+                    function type() {
+                        const current = lines[lineIdx];
+                        el.textContent = current.slice(0, charIdx);
+                        charIdx++;
+                        if(charIdx <= current.length) {
+                            setTimeout(type, 60);
+                        } else {
+                            // pause then move to next
+                            setTimeout(() => {
+                                lineIdx = (lineIdx + 1) % lines.length;
+                                charIdx = 0;
+                                // If we just showed first line, show second immediately appended
+                                if(lineIdx === 1) {
+                                    // combine both lines for display
+                                    el.textContent = lines[0] + lines[1].slice(0, charIdx);
+                                    type();
+                                } else {
+                                    // clear then restart
+                                    el.textContent = '';
+                                    setTimeout(type, 500);
+                                }
+                            }, 700);
+                        }
+                    }
+                    // Better behavior: simulate typing both lines as a single sequence
+                    function runSequence(){
+                        const seq = 'deploying model v2.4... ✅ rollout successful';
+                        let i=0;
+                        function tick(){
+                            el.textContent = seq.slice(0,i);
+                            i++;
+                            if(i<=seq.length) setTimeout(tick, 50);
+                            else setTimeout(()=>{ el.textContent=''; setTimeout(tick, 800); i=0; }, 1500);
+                        }
+                        tick();
+                    }
+                    runSequence();
+                })();
+            </script>
         </section>
     </body>
 
