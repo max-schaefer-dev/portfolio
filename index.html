@@ -43,34 +43,6 @@
             }
         </script>
 
-        <style>
-            /* small UX upgrades without touching your main css */
-            .btn-cta { border:1px solid #fff; padding:.6rem 1rem; border-radius:.5rem; margin:.25rem; }
-            .badge-pill { border:1px solid rgba(255,255,255,.3); padding:.3rem .6rem; border-radius:999px; font-size:.8rem; }
-            .service-card h4 { margin-top:.5rem; }
-            .metric { font-weight:700; font-size:1.25rem; }
-            .muted { opacity:.85; }
-
-            /* Terminal animation (hero) */
-            .terminal {
-                background: rgba(0,0,0,0.12);
-                border-radius: 6px;
-                max-width: 520px;
-                margin: 0.75rem 0 0 0; /* left-aligned */
-                padding: 0.6rem 0.9rem;
-                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;
-                color: #e9f2ff;
-                font-size: 0.95rem;
-                box-shadow: inset 0 -1px 0 rgba(255,255,255,0.03);
-                text-align: left;
-            }
-            .terminal-line { white-space: nowrap; overflow: hidden; display:flex; align-items:center; gap:8px; }
-            .term-cursor { display: inline-block; margin-left: 4px; opacity: 1; animation: blink 1s steps(2,start) infinite; }
-            .spinner { display:inline-block; width:16px; height:16px; line-height:16px; text-align:center; border-radius:50%; border:2px solid rgba(255,255,255,0.25); border-top-color: rgba(255,255,255,0.75); animation: spin 0.8s linear infinite; }
-            @keyframes spin { to { transform: rotate(360deg); } }
-            .term-success { color: #4ade80; font-weight:700; }
-            @keyframes blink { 50% { opacity: 0; } }
-        </style>
     </head>
     <body>
         <header id="header" class="fixed-top">
@@ -286,45 +258,7 @@
             <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
             <script src="js/navbar.js"></script>
             <script src="js/neural_network.js"></script>
-            <script>
-                // Spinner -> success sequence for terminal-line
-                (function(){
-                    const textEl = document.getElementById('term-text');
-                    const spinnerEl = document.getElementById('term-spinner');
-                    const checkEl = document.getElementById('term-check');
-                    if(!textEl || !spinnerEl || !checkEl) return;
-
-                    const deploying = 'deploying model v2.4...';
-                    // Shorten success message on smaller screens to avoid long line
-                    const isMobile = (window.matchMedia && window.matchMedia('(max-width: 992px)').matches);
-                    const success = isMobile ? ' successful' : ' rollout successful';
-
-                    function showDeploy(){
-                        // show deploying text + spinner
-                        textEl.textContent = deploying;
-                        spinnerEl.style.display = 'inline-block';
-                        checkEl.style.display = 'none';
-                        // after short delay, show success
-                        setTimeout(showSuccess, 1600);
-                    }
-
-                    function showSuccess(){
-                        spinnerEl.style.display = 'none';
-                        checkEl.style.display = 'inline-block';
-                        textEl.textContent = deploying + success;
-                        // keep success visible, then loop
-                        setTimeout(()=>{
-                            // fade out then restart
-                            textEl.textContent = '';
-                            checkEl.style.display = 'none';
-                            setTimeout(showDeploy, 900);
-                        }, 2200);
-                    }
-
-                    // start loop
-                    showDeploy();
-                })();
-            </script>
+            <script src="js/hero-terminal.js"></script>
         </section>
     </body>
 
