@@ -560,6 +560,9 @@ ul li{
     canvas{
         width:65%;
     }
+    section{
+       padding:50px 2rem;
+    }
 
     .table td {
         padding: 0.5rem;
@@ -605,6 +608,7 @@ ul li{
     #cover{
         padding-top:100px;
         padding-left:1rem;
+        height: auto !important;
     }
 
     #cover-text{
@@ -627,7 +631,24 @@ ul li{
         display:flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        height: 100%;
+        /* allow content to size naturally on mobile */
+        height: auto !important;
+    }
+
+    /* Reduce terminal size and spacing on smaller screens */
+    .terminal{
+        max-width: 100% !important;
+        margin: 0.5rem 0 0 0 !important;
+        padding: 0.45rem 0.6rem !important;
+        font-size: 0.7rem !important;
+        /* keep terminal height stable to avoid layout jumps when content changes */
+        min-height: 34px !important;
+        max-height: 48px !important;
+        overflow: hidden !important;
+    }
+
+    .terminal-line{
+        gap: 2px;
     }
 
     #nav-mobile li:last-child{
