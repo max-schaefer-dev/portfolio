@@ -67,6 +67,11 @@ footer p{
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
+#casestudies .service-card {
+    background: var(--bg-secondary);
+    color: #fff;
+}
+
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -88,6 +93,10 @@ footer p{
     color: #475569;
     }
 
+#casestudies .service-card p {
+    font-size: 0.95rem;
+    color: #fff;
+    }
 .about-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -176,6 +185,14 @@ footer p{
     gap: 1rem;
 }
 
+.btn-container{
+    padding-left:0;
+    display: flex;
+    justify-content: left;
+    gap: 1.25rem; /* main spacing between buttons — adjust as needed */
+    flex-wrap: wrap; /* keeps buttons readable on small screens */
+}
+
 #cover-text h1{
     font-size:60px;
     font-weight:700;
@@ -235,7 +252,15 @@ ul li{
     font-size: 0.9rem;
 }
 
-/* Section 2 - Projects */
+/* Section 3 - Solutions */
+.casestudies{
+    background-color: white;
+}
+
+.solutions-row img{
+    margin-bottom: 10px;
+}
+
 .project-container {
     display: flex;
     flex-direction: column;
@@ -274,7 +299,7 @@ ul li{
     font-size: 1.1rem;
 }
 
-/* Section 3 - Competitions */
+/* Section 4 - Competitions */
 #competitions a, #achievements a {
     color: var(--h-primary);
 }
