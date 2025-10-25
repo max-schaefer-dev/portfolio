@@ -340,6 +340,42 @@ ul li{
     font-size: 1.1rem;
 }
 
+/* Technology badges under case studies */
+.tech-list{
+    margin-top: 0.75rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 0.5rem;
+}
+
+.tech-badge{
+    display:inline-block;
+    background: rgba(6,182,212,0.08);
+    color: var(--h-primary);
+    border: 1px solid rgba(6,182,212,0.12);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+.service-card .tech-badge{
+    box-shadow: none;
+}
+
+/* Thumbnail for case studies */
+.case-thumb{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.service-card h4{
+    margin-top: 0.5rem;
+}
+
 /* Section 4 - Competitions */
 #competitions a, #achievements a {
     color: var(--h-primary);
