@@ -54,9 +54,26 @@ footer p{
 /* Services */
 .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
+
+/* Case studies: force 3 columns on desktop, 2 on tablet, 1 on mobile */
+#casestudies .grid {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    #casestudies .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    #casestudies .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 .service-card {
       background: white;
@@ -66,6 +83,11 @@ footer p{
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+.service-card img{
+    width:100%;
+    margin-bottom:10px;
+}
 
 #casestudies .service-card {
     background: var(--bg-secondary);
