@@ -224,7 +224,7 @@ footer p{
     font-weight:700;
 }
 
-#cover-text button{
+#cover-text .btn{
     padding: 0.8rem 1.5rem;
     margin: 20px 0 0 0;
 }
@@ -237,11 +237,11 @@ footer p{
         gap: 0.5rem;            /* tighten spacing to fit */
     }
 
-    #cover-text button{
-        margin: 0;              /* remove top margin that causes stacking */
-        padding: 0.6rem 1rem;   /* slightly smaller to help them fit side-by-side */
-        white-space: nowrap;    /* prevent internal wrapping */
-    }
+        #cover-text .btn{
+            margin: 0;              /* remove top margin that causes stacking */
+            padding: 0.6rem 1rem;   /* slightly smaller to help them fit side-by-side */
+            white-space: nowrap;    /* prevent internal wrapping */
+        }
 }
 
 /* Section 2 - About me */
