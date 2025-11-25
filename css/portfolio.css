@@ -345,6 +345,7 @@ ul li{
     margin-top: 0.75rem;
     display:flex;
     flex-wrap:wrap;
+    justify-content: center;
     gap: 0.5rem;
 }
 
